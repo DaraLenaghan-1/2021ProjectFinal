@@ -1,17 +1,28 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
+  <ion-toolbar >
+    <img src="https://d2cx26qpfwuhvu.cloudfront.net/sixnations/wp-content/uploads/2018/12/07092501/fallback.png"> <!--Logo in the assets folder-->
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" >
   <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
+    <ion-toolbar></ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <!--Intro to 6 Nations-->
+<section>
+  <h1>Six Nations Championship</h1>
+
+  <p>The Six Nations Championship is an annual international men's rugby union competition between the teams of England, France, Ireland, Italy, Scotland and Wales. The current champions are Wales, who won the 2021 tournament.</p>
+  <img src="https://d2cx26qpfwuhvu.cloudfront.net/sixnations/wp-content/uploads/2021/02/05102839/SB21Fantasy-1010x568.jpg" >
+</section>
+
+
+<!--Buttons to naviaget the app-->
+  <ion-button expand="block" color="tertiary" [routerLink]="['/tab2']" routerDirection=forward>Teams</ion-button>
+  <br>
+  <ion-button expand="block" color="medium" [routerLink]="['/tab3']" routerDirection=forward>Points Table</ion-button>
+  <br>
+  <ion-button expand="block" color="medium" [routerLink]="['/tab4']" routerDirection=forward>Social Media</ion-button>
+  <br>
 </ion-content>
